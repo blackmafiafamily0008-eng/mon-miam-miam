@@ -1,0 +1,12 @@
+node_modules/
+references/demo-home.html
+references/*.css
+references/*contact-sheet*
+*.zip
+qa/
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key

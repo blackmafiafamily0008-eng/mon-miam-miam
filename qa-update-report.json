@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-27",
+  "scope": "Google de démonstration, Mobile Money, estimation fidélité, galerie défilante",
+  "unitTests": {"passed": 9, "failed": 0},
+  "staticChecks": "Syntaxe JavaScript, références locales et langue française : OK",
+  "premiumAudit": {"mode": "strict", "errors": 0, "warnings": 0},
+  "browserVerified": [
+    "Bouton Google depuis la connexion, ouverture du dialogue et accès au profil étudiant fictif",
+    "Ajout d’un plat, panier et quatre moyens de paiement visibles",
+    "Estimation de 18 points pour 18 000 FC de repas",
+    "Formulaire M-Pesa et écran de simulation avec montant et numéro fictif",
+    "Refus : panier conservé, erreur explicite et aucune commande créée",
+    "Nouvel essai confirmé : une commande visible avec M-Pesa confirmé (simulation)"
+  ],
+  "limits": "Le contrôle du navigateur a été arrêté par l’outil lors de l’accès à Chrome pour GitHub. Les derniers ajustements de focus, le rendu mobile et le mouvement de la galerie n’ont pas fait l’objet d’un nouvel essai visuel dans cette session. Le rapport qa-browser-report.json concerne la base précédente. Aucune intégration Google ou transaction réelle testée."
+}

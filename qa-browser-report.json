@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "browser": "Microsoft Edge / Chromium",
+  "viewport": [
+    1440,
+    390
+  ],
+  "checks": [
+    "Accueil français, recherche vide, fermeture clavier",
+    "Inscription valide et erreurs de champs",
+    "Panier, livraison, paiement simulé et réclamation",
+    "Employé : préparation jusqu’à livraison et proposition de réponse",
+    "Gérant : validation de la réponse et statistiques",
+    "Connexion refusée puis valide, fidélité +18 et réponse visible",
+    "Parrain : bonus +10 après première commande du filleul",
+    "Administrateur : création, modification et retrait d’un plat",
+    "Administrateur : création d’affiche et de compte employé",
+    "29 vues vérifiées à 1440px et 390px, navigation mobile, images chargées"
+  ],
+  "pageErrors": []
+}

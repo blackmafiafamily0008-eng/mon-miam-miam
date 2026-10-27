@@ -1,0 +1,8 @@
+{
+  "name": "mon-miam-miam-frontend",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Mon Miam Miam · ZEDUC-SP@CE · Kinshasa et ULC ICAM · Front-end français",
+  "type": "module",
+  "scripts": {"dev": "node server.mjs", "start": "node server.mjs", "check": "node scripts/check.mjs", "test": "node --test scripts/test-core.mjs"}
+}

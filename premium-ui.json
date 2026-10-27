@@ -1,0 +1,11 @@
+{
+  "profile": "product-admin",
+  "sourceRoots": ["dist"],
+  "locale": "fr-FR",
+  "canonicalMap": "UX-CONTRACT.md",
+  "requiredCapabilities": ["Select/Listbox", "Date", "Form", "Scrollbar", "Toast", "CRUD"],
+  "ownership": {"Select/Listbox":"native","Date":"native"},
+  "requiredCommands": ["unit"],
+  "commands": {"unit":"node --test scripts/test-core.mjs"},
+  "evidence": {"crudFullFlow":"scripts/test-core.mjs","failurePaths":"scripts/test-core.mjs"}
+}

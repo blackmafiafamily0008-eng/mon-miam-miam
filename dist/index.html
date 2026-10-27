@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1111">
+  <meta name="description" content="Mon Miam Miam, le restaurant ZEDUC-SP@CE à Kinshasa. La pause gourmande des étudiants de l’ULC ICAM. Démonstration front-end.">
+  <title>Mon Miam Miam · ZEDUC-SP@CE · Kinshasa</title>
+  <link rel="icon" href="assets/zeduc-space-logo.png">
+  <link rel="preload" as="image" href="assets/hero-burger.jpeg">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="miam-core.js" defer></script>
+  <script src="app-fr.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="m5 3 4 4-2 3a15 15 0 0 0 7 7l3-2 4 4-2 3C10 22 2 14 2 5l3-2Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 5 9 8 9-8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 4h5c2 0 4 1 4 2 0-1 2-2 4-2h5v16h-5c-2 0-4 1-4 1s-2-1-4-1H3V4Z"/><path d="M12 6v15"/></symbol>
+    <symbol id="i-taste" viewBox="0 0 24 24"><path d="M5 2h14v20H5zM19 7h2v10h-2M8 17h8"/><circle cx="12" cy="8" r="2"/><path d="M9 14v-1a3 3 0 0 1 6 0v1"/></symbol>
+    <symbol id="i-cloche" viewBox="0 0 24 24"><path d="M2 18h20M3 21h18M4 16a8 8 0 0 1 16 0H4ZM12 8V5M10 4h4"/></symbol>
+    <symbol id="i-delivery" viewBox="0 0 24 24"><path d="M2 19h20M3 16h18M6 15V9h11l3 6M6 9V4h3v5M10 9V6h4v3"/><circle cx="8" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+    <symbol id="i-dishes" viewBox="0 0 24 24"><path d="M12 21V9M7 21h10M3 3c0 7 5 7 5 7s0-7-5-7ZM21 3c0 7-5 7-5 7s0-7 5-7Z"/><circle cx="12" cy="5" r="3"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 5h12v13H2V5Zm12 5h5l3 4v4h-8M15 10v5h7"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="m8 13-2 9 6-3 6 3-2-9m-4-8v6m-3-3h6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></symbol>
+  </defs></svg>
+
+  <header class="site-header" id="home">
+    <div class="top-bar"><a href="#contact">KINSHASA, RDC</a><span>LE GOÛT DE SE RETROUVER</span><a href="connexion.html">LA PAUSE DES ÉTUDIANTS DE L’ULC ICAM ↗</a></div><div class="nav-bar">
+      <button class="search-toggle" data-open-search><svg class="icon"><use href="#i-search"/></svg><span>Rechercher…</span></button>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a class="active" href="#home">Accueil</a><a href="#about">Le restaurant</a><a href="#menu">La carte</a>
+        <a class="brand" href="#home" aria-label="Accueil ZEDUC-SP@CE"><img src="assets/zeduc-space-logo.png" width="103" height="82" alt="ZEDUC-SP@CE"></a>
+        <a href="#blog">La vie du resto</a><a href="connexion.html" data-account-link>Connexion</a><a href="inscription.html">Inscription</a>
+      </nav>
+      <a class="mobile-brand" href="#home"><img src="assets/zeduc-space-logo.png" alt="ZEDUC-SP@CE" width="80" height="64"></a>
+      <div class="nav-actions"><button class="cart-toggle" data-open-cart aria-label="Ouvrir mon panier"><svg class="icon"><use href="#i-bag"/></svg><span class="cart-count">0</span></button><button class="mobile-toggle" aria-label="Ouvrir la navigation" aria-expanded="false" aria-controls="mobile-nav"><svg class="icon"><use href="#i-menu"/></svg></button></div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigation mobile" hidden><a href="#home">Accueil</a><a href="#about">Le restaurant</a><a href="#menu">La carte</a><a href="#blog">La vie du resto</a><a href="connexion.html" data-account-link>Connexion</a><a href="inscription.html">Inscription</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 id="hero-title">LE GOÛT DE SE RETROUVER.<br>À KINSHASA.</h1>
+        <p>Un repas généreux, des amis autour de la table et une pause bien méritée. Bienvenue chez ZEDUC-SP@CE, le rendez-vous gourmand de la communauté ULC ICAM.</p>
+        <a class="button" href="#menu">VOIR LA CARTE</a>
+      </div>
+      <span class="side-note">LE GOÛT, LES AMIS, LE MOMENT</span>
+      <div class="hero-controls" aria-label="Photos du restaurant"><button class="circle-arrow" data-hero-prev aria-label="Photo précédente">←</button><button class="circle-arrow" data-hero-next aria-label="Photo suivante">→</button></div>
+    </section>
+
+    <section class="features section-wrap" id="about" aria-label="Notre restaurant">
+      <div class="features-panel">
+        <article><svg class="feature-icon"><use href="#i-taste"/></svg><div><h3>LE GOÛT AUTHENTIQUE</h3><p>Des plats généreux, des recettes qui donnent envie et le plaisir de bien manger, tout simplement.</p></div></article>
+        <article><svg class="feature-icon"><use href="#i-cloche"/></svg><div><h3>LE SENS DU DÉTAIL</h3><p>Une cuisine préparée avec attention, pour faire de chaque pause un moment à savourer.</p></div></article>
+        <article><svg class="feature-icon"><use href="#i-book"/></svg><div><h3>UNE CARTE GÉNÉREUSE</h3><p>Des burgers aux grillades, des pizzas aux douceurs : trouvez de quoi combler toutes vos envies.</p></div></article>
+      </div>
+      <div class="features-photos"><img class="prawn-photo" src="assets/authentic_img1-1.png" width="671" height="742" alt="Crevettes grillées et légumes frais" loading="lazy"><img class="waffle-photo" src="assets/authentic_img2-1.png" width="413" height="561" alt="Gaufres, fruits rouges et café" loading="lazy"></div>
+    </section>
+
+    <section class="food-mosaic" aria-label="Nos spécialités">
+      <a class="shushi-tile" href="#menu"><img src="assets/shushi-1.png" width="743" height="838" alt="Brochettes grillées sur une assiette sombre" loading="lazy"><div><h3>BROCHETTES</h3><p>Des brochettes dorées au grill, des légumes et une belle touche de fraîcheur.</p></div></a>
+      <a class="food-copy burger-copy" href="#menu"><h3>BURGER</h3><p>Un pain moelleux, une garniture généreuse et notre sauce maison. Le bon compagnon de votre pause.</p></a>
+      <a class="food-image pork-photo" href="#menu" aria-label="Découvrir les rouleaux dorés"><img src="assets/itakian_porh-1.png" alt="Rouleaux dorés au sésame" width="394" height="419" loading="lazy"></a>
+      <a class="food-copy rice-copy" href="#menu"><h3>RIZ SAUTÉ</h3><p>Un bol parfumé et coloré, pour une pause aussi gourmande que réconfortante.</p></a>
+      <a class="food-image burger-photo" href="#menu" aria-label="Découvrir nos burgers"><img src="assets/burger-5.png" alt="Burger de bœuf, salade, fromage et tomate" width="393" height="419" loading="lazy"></a>
+      <a class="food-copy pork-copy" href="#menu"><h3>ROULEAUX DORÉS</h3><p>Des rouleaux dorés et croustillants, à déguster autour d’une bonne table.</p></a>
+      <a class="food-image rice-photo" href="#menu" aria-label="Découvrir le riz sauté"><img src="assets/fried_rice-1.png" alt="Bol de riz, légumes et saumon" width="393" height="419" loading="lazy"></a>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading"><p class="eyebrow">À la carte</p><h2>VOS ENVIES ONT TROUVÉ LEUR TABLE</h2></div>
+      <div class="menu-layout"><div class="menu-column" id="menu-left"></div><div class="chef-photo"><img src="assets/a_collection_img-1.png" alt="Photo d’illustration : chef en veste blanche" width="375" height="846" loading="lazy"></div><div class="menu-column" id="menu-right"></div></div>
+      <div class="restaurant-values"><span>SUR PLACE</span><b>✦</b><span>À EMPORTER</span><b>✦</b><span>À PARTAGER</span><b>✦</b><span>À SAVOURER</span></div><p class="menu-demo-note">Carte et prix de démonstration · Francs congolais</p>
+    </section>
+
+    <section class="benefits" aria-label="Nos services"><div class="section-wrap benefits-grid">
+      <article><svg class="feature-icon"><use href="#i-delivery"/></svg><h3>LA LIVRAISON À KINSHASA</h3><p>Choisissez votre adresse à Kinshasa et suivez votre commande depuis votre espace.</p></article>
+      <article><svg class="feature-icon"><use href="#i-dishes"/></svg><h3>LE CHOIX À LA CARTE</h3><p>Grillades, burgers, pizzas et desserts : il y en a pour chaque envie.</p></article>
+      <article><svg class="feature-icon"><use href="#i-truck"/></svg><h3>VOTRE FIDÉLITÉ RÉCOMPENSÉE</h3><p>Cumulez des points à chaque commande terminée et retrouvez vos récompenses.</p></article>
+      <article><svg class="feature-icon"><use href="#i-award"/></svg><h3>LES AMIS SONT LES BIENVENUS</h3><p>Invitez vos amis de l’ULC ICAM et partagez vos meilleures pauses gourmandes.</p></article>
+    </div></section>
+
+    <section class="delivery" id="delivery"><div class="section-wrap delivery-layout"><div class="delivery-copy"><p class="eyebrow">À votre façon</p><h2>VOTRE REPAS,<br>LÀ OÙ VOUS ÊTES</h2><p>Sur place ou à votre adresse à Kinshasa, retrouvez la carte dans votre espace étudiant. Choisissez votre repas et suivez sa préparation en quelques gestes.</p><a class="text-link" href="#menu">VOIR LA CARTE <svg class="icon"><use href="#i-arrow"/></svg></a></div><img class="pizza-photo" src="assets/exploring_img-1.png" alt="Pizza aux légumes" width="528" height="526" loading="lazy"></div></section>
+
+    <section class="gallery" id="gallery" aria-label="La cuisine en images"><button class="gallery-wide" data-gallery="gallery_img1-1-1.png" aria-label="Voir le saumon grillé"><img src="assets/gallery_img1-1-1.png" alt="Saumon grillé" loading="lazy"></button><button data-gallery="gallery_img2-1-1.png" aria-label="Voir le milkshake au chocolat"><img src="assets/gallery_img2-1-1.png" alt="Milkshake au chocolat" loading="lazy"></button><button data-gallery="gallery_img3-1-1.png" aria-label="Voir le sandwich grillé"><img src="assets/gallery_img3-1-1.png" alt="Sandwich grillé" loading="lazy"></button><button data-gallery="gallery_img4-1-1.png" aria-label="Voir le burger au fromage"><img src="assets/gallery_img4-1-1.png" alt="Burger au fromage" loading="lazy"></button><button data-gallery="gallery_img5-1-1.png" aria-label="Voir le poulet grillé"><img src="assets/gallery_img5-1-1.png" alt="Poulet grillé" loading="lazy"></button><button class="gallery-wide" data-gallery="gallery_img6-1-1.png" aria-label="Voir la pizza"><img src="assets/gallery_img6-1-1.png" alt="Pizza sortie du four" loading="lazy"></button></section>
+
+    <section class="reservation" id="reservation"><div class="reservation-copy"><p class="eyebrow">Bienvenue à table</p><h2>UNE TABLE POUR VOUS</h2><p>Entre amis ou après les cours, imaginez votre prochaine table. Ce formulaire est une démonstration : aucune réservation n’est envoyée.</p><form id="reservation-form"><div class="reservation-fields"><label><span class="sr-only">Votre nom</span><input name="name" placeholder="Votre nom" autocomplete="name" required></label><label><span class="sr-only">Adresse e-mail</span><input name="email" type="email" placeholder="Adresse e-mail" autocomplete="email" required></label><label><span class="sr-only">Téléphone</span><input name="phone" type="tel" placeholder="Téléphone" autocomplete="tel" required></label><label><span class="sr-only">Créneau</span><select name="time" required><option value="">Choisir un créneau</option><option>09 h – 12 h</option><option>12 h – 15 h</option><option>15 h – 18 h</option><option>18 h – 21 h</option><option>21 h – 23 h</option></select></label><label><span class="sr-only">Date de réservation</span><input name="date" type="date" required></label><label><span class="sr-only">Nombre de personnes</span><input name="guests" type="number" min="1" max="30" placeholder="Nombre de personnes" required></label></div><button class="text-link" type="submit">SIMULER MA RÉSERVATION <svg class="icon"><use href="#i-arrow"/></svg></button><p class="form-status" id="reservation-status" role="status"></p></form></div><img class="reservation-photo" src="assets/make_reservation-1.png" alt="Salle de restaurant à la lumière chaleureuse" width="857" height="746" loading="lazy"></section>
+
+    <section class="testimonials" aria-labelledby="testimonials-title"><div class="section-heading"><p class="eyebrow">Notre communauté</p><h2 id="testimonials-title">LE PLAISIR DE SE RETROUVER</h2></div><div class="testimonial-content"><img id="review-avatar" src="assets/zeduc-space-logo.png" alt="ZEDUC-SP@CE" width="80" height="80" loading="lazy"><h3>LA TABLE DES BONS MOMENTS</h3><p class="review-role">KINSHASA · ULC ICAM</p><blockquote id="community-copy">Entre deux cours, après une longue journée ou juste pour le plaisir : il y a toujours une bonne raison de se retrouver autour d’un repas.</blockquote><span class="quote-mark" aria-hidden="true">“</span><div class="review-dots" aria-label="La communauté"><button class="selected" aria-label="Les moments entre amis" aria-pressed="true" data-review="0"></button><button aria-label="La fidélité" aria-pressed="false" data-review="1"></button><button aria-label="Le parrainage" aria-pressed="false" data-review="2"></button></div></div></section>
+
+    <section class="blog-section section-wrap" id="blog"><div class="section-heading"><p class="eyebrow">La vie du resto</p><h2>DES MOMENTS À PARTAGER</h2></div><div class="blog-grid"><article><button class="blog-card" data-blog="0"><img src="assets/discovering-deliciousness-one-recipe-at-a-time.png" alt="Burger fraîchement préparé" loading="lazy"><div class="blog-card-copy"><p>LA PAUSE <span>•</span> ULC ICAM</p><h3>Une pause burger<br>entre deux cours</h3><span class="blog-read">DÉCOUVRIR →</span></div></button></article><article><button class="blog-card" data-blog="1"><img src="assets/indulge-in-delicious-creations.png" alt="Cuisine et terrasse du restaurant" loading="lazy"><div class="blog-card-copy"><p>LE RENDEZ-VOUS <span>•</span> KINSHASA</p><h3>Les amis, la table et vous</h3><span class="blog-read">DÉCOUVRIR →</span></div></button></article><article><button class="blog-card" data-blog="2"><img src="assets/painting-palates-with-flavorful-delights.png" alt="Assiette généreuse de crevettes grillées" loading="lazy"><div class="blog-card-copy"><p>LE RENDEZ-VOUS <span>•</span> KINSHASA</p><h3>Le plaisir de découvrir<br>de nouvelles saveurs</h3><span class="blog-read">DÉCOUVRIR →</span></div></button></article></div></section>
+
+    <section class="instagram-strip" aria-label="Galerie gourmande"><div class="gallery-strip-heading"><span>LES ENVIES SE SUIVENT.</span><button type="button" class="gallery-motion-toggle" aria-controls="food-marquee" aria-pressed="false">Mettre en pause <span aria-hidden="true">Ⅱ</span></button></div><div class="gallery-window" id="food-marquee"><div class="gallery-track"><div class="gallery-group"><a href="#gallery"><img src="assets/insta_img1-1.png" alt="Burger de bœuf" loading="lazy"></a><a href="#gallery"><img src="assets/insta_img2-1.png" alt="Tacos garnis" loading="lazy"></a><a href="#gallery"><img src="assets/insta_img4-1.png" alt="Pizza à la roquette" loading="lazy"></a><a href="#gallery"><img src="assets/insta_img5-1.png" alt="Steak et œuf" loading="lazy"></a><a href="#gallery"><img src="assets/insta_img6-1.png" alt="Burger classique au fromage" loading="lazy"></a></div></div></div></section>
+  </main>
+
+  <footer class="footer" id="contact"><div class="section-wrap footer-grid"><div class="newsletter"><h3>UNE PLACE DANS<br>LA COMMUNAUTÉ.<br>UN REPAS À PARTAGER.</h3><p>Rejoignez Mon Miam Miam et retrouvez vos commandes, vos points et les rendez-vous du restaurant.</p><a class="text-link" href="inscription.html">CRÉER MON COMPTE →</a></div><div><h3>LE RESTAURANT</h3><ul><li><a href="#home">Accueil</a></li><li><a href="#about">Notre univers</a></li><li><a href="#menu">La carte</a></li><li><a href="#reservation">Une table pour vous</a></li><li><a href="#blog">La vie du resto</a></li></ul></div><div><h3>VOTRE ESPACE</h3><ul><li><a href="connexion.html">Se connecter</a></li><li><a href="inscription.html">Créer un compte étudiant</a></li><li><a href="connexion.html">Espace employé</a></li><li><a href="connexion.html">Espace gérant</a></li><li><a href="connexion.html">Espace administrateur</a></li></ul></div><div class="footer-contact"><h3>RETROUVONS-NOUS</h3><p>Notre ville</p><span>Kinshasa, République<br>démocratique du Congo</span><p>Notre communauté</p><span>Les étudiants de l’ULC ICAM</span><p>Le projet</p><span>Mon Miam Miam<br>ZEDUC-SP@CE</span></div></div><div class="copyright section-wrap"><span>© 2026 ZEDUC-SP@CE · Démonstration front-end.</span><a href="#home">Retour en haut ↑</a></div></footer>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title"><button class="close-dialog" aria-label="Fermer la recherche">×</button><h2 id="search-title">UNE ENVIE PARTICULIÈRE ?</h2><label class="sr-only" for="menu-search">Rechercher un plat</label><input id="menu-search" type="search" placeholder="Rechercher un plat…" autocomplete="off"><div id="search-results" aria-live="polite"></div></dialog>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title"><button class="close-dialog" aria-label="Fermer le panier">×</button><h2 id="cart-title">VOTRE PANIER</h2><div id="cart-items"></div><div class="cart-summary"><span>Sous-total</span><strong id="cart-total">0 FC</strong></div><p class="demo-note">Prix de démonstration. Aucune commande ni aucun paiement réel.</p><button class="button" id="cart-continue">PASSER À MON ESPACE</button></dialog>
+  <dialog class="detail-dialog" id="detail-dialog" aria-label="Détails"><button class="close-dialog" aria-label="Fermer le détail">×</button><div id="detail-content"></div></dialog>
+  <div class="toast" id="toast" role="status"></div><aside class="cookie-note" id="cookie-note" aria-label="Données de démonstration" hidden><div><strong>Un mot sur les cookies</strong><p>Cette maquette utilise uniquement le stockage de votre navigateur pour conserver votre panier et vos essais. Aucun suivi publicitaire.</p></div><button id="cookie-dismiss">J’ai compris</button></aside>
+</body>
+</html>
