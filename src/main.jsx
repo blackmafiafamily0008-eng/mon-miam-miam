@@ -14,6 +14,8 @@ const attributes = {
   readonly: 'readOnly', autofocus: 'autoFocus', colspan: 'colSpan',
   rowspan: 'rowSpan', maxlength: 'maxLength', minlength: 'minLength',
   srcset: 'srcSet', crossorigin: 'crossOrigin',
+  autocomplete: 'autoComplete', novalidate: 'noValidate',
+  inputmode: 'inputMode', spellcheck: 'spellCheck',
   'stroke-width': 'strokeWidth', 'stroke-linecap': 'strokeLinecap',
   'stroke-linejoin': 'strokeLinejoin', 'fill-rule': 'fillRule',
   'clip-rule': 'clipRule', 'viewbox': 'viewBox',

@@ -30,6 +30,13 @@ export function getCurrentPage(pathname = window.location.pathname) {
 
 export function readLegacyPage(page) {
   const doc = new DOMParser().parseFromString(cleanVisibleCopy(page.html), 'text/html');
+  // Les raccourcis historiques permettaient d'entrer dans les rôles privés
+  // sans authentification. Ils ne doivent plus être présentés au public.
+  doc.querySelectorAll('.demo-access, [data-demo], .google-demo-profile, [data-google-confirm]').forEach(node => node.remove());
+  // Les parcours réservés au personnel ne sont pas des liens de navigation publique.
+  doc.querySelectorAll('a').forEach(link => {
+    if (/^Espace (employé|gérant|administrateur)$/i.test(link.textContent.trim())) link.remove();
+  });
   return {
     // React reconstruit les éléments historiques, en conservant exactement
     // leur ordre, leurs classes, leurs attributs et leur contenu.

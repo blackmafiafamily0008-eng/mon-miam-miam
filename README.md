@@ -6,6 +6,10 @@ couche de compatibilité pendant sa conversion progressive en composants React.
 Les fichiers source existants sont conservés dans `dist/` ; les fichiers de
 production de Vite sont construits dans `build/`.
 
+## Version courante
+
+La branche `main` contient la version React + Vite avec trois plats congolais, le logo SVG et la suppression des accès directs aux rôles. Le contrôle des permissions reste local : lire [la revue de sécurité](docs/security-review.md) avant toute utilisation avec de vrais comptes. Les profils initiaux et leurs identifiants sont documentés dans cette revue ; aucun mot de passe administrateur n’est inclus.
+
 ## Démarrage avec React + Vite
 
 ```bash
@@ -22,7 +26,7 @@ npm run build
 npm run preview
 ```
 
-Pour lancer la version historique inchangée : `npm run dev:legacy`.
+Pour lancer la version historique : `npm run dev:legacy`.
 Les routes `index.html`, `connexion.html`, `inscription.html`,
 `mot-de-passe-oublie.html`, `etudiant.html`, `employe.html`,
 `gerant.html` et `admin.html` restent accessibles.

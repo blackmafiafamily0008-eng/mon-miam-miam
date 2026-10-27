@@ -24,7 +24,7 @@ des écrans en composants React natifs.
 | Route | Parcours | Moteur actuel | Cible |
 | --- | --- | --- | --- |
 | `/` | Vitrine, menu, panier, recherche, galerie | `app-fr.js` | React + composants publics |
-| `/connexion.html` | Connexion locale, accès rapide | `auth.js` | React Auth |
+| `/connexion.html` | Connexion locale | `auth.js` | React Auth |
 | `/inscription.html` | Inscription, parrainage | `auth.js` | React Auth |
 | `/mot-de-passe-oublie.html` | Récupération informative | `auth.js` | React Auth |
 | `/etudiant.html` | Carte, panier, commandes, fidélité, avis | `espace.js` | React Student |
@@ -54,7 +54,7 @@ réécrivent automatiquement les URLs.
 La migration d'outillage ne crée ni backend, ni authentification sécurisée,
 ni paiement réel. Les rôles et données restent locaux. Une API et une
 autorisation serveur seront obligatoires avant mise en production commerciale.
-L'accès rapide n'est pas une connexion Google ; aucun débit Mobile Money,
+Le bouton Google n'authentifie aucun utilisateur tant qu'OAuth n'est pas configuré ; aucun débit Mobile Money,
 e-mail de récupération ou réservation n'est envoyé.
 
 ## Validation

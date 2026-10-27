@@ -1,9 +1,10 @@
-import { copyFile, mkdir, readdir, readFile, writeFile, cp } from 'node:fs/promises';
+import { copyFile, mkdir, readdir, readFile, writeFile, cp, rm } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { cleanVisibleCopy } from '../src/visible-copy.js';
 
 const source = resolve('dist');
 const target = resolve('public');
+await rm(target, { recursive: true, force: true });
 await mkdir(target, { recursive: true });
 
 for (const entry of await readdir(source, { withFileTypes: true })) {

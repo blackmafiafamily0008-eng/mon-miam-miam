@@ -18,6 +18,11 @@ test('préserve le nom de la République démocratique du Congo', () => {
 test('retire les libellés de simulation de réservation', () => {
   assert.equal(cleanVisibleCopy('SIMULER MA RÉSERVATION'), 'PRÉPARER MA RÉSERVATION');
 });
+test('conserve le bouton Google et indique honnêtement sa limite', () => {
+  const copy = cleanVisibleCopy('Continuer avec Google Parcours de démonstration · Aucun compte Google réel utilisé.');
+  assert.match(copy, /Se connecter avec Google/);
+  assert.match(copy, /connexion Google sera disponible/);
+});
 test('accepte les routes historiques avec et sans extension', () => {
   for (const name of ['index', 'connexion', 'inscription', 'mot-de-passe-oublie', 'etudiant', 'employe', 'gerant', 'admin']) {
     const url = name === 'index' ? '/' : `/${name}`;
