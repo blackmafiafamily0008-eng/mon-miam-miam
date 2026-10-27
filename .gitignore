@@ -1,4 +1,6 @@
 node_modules/
+public/
+build/
 references/demo-home.html
 references/*.css
 references/*contact-sheet*

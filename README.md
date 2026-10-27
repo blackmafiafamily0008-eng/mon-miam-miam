@@ -1,4 +1,36 @@
-# Mon Miam Miam — Front-end français
+# Mon Miam Miam — Front-end React + Vite
+
+L'application utilise désormais **React 19 + Vite 7**. Les huit routes sont
+montées par React ; le moteur fonctionnel historique reste chargé dans une
+couche de compatibilité pendant sa conversion progressive en composants React.
+Les fichiers source existants sont conservés dans `dist/` ; les fichiers de
+production de Vite sont construits dans `build/`.
+
+## Démarrage avec React + Vite
+
+```bash
+npm install
+npm run dev
+```
+
+Ouvrir http://127.0.0.1:5173. Pour compiler et prévisualiser la production :
+
+```bash
+npm run check
+npm test
+npm run build
+npm run preview
+```
+
+Pour lancer la version historique inchangée : `npm run dev:legacy`.
+Les routes `index.html`, `connexion.html`, `inscription.html`,
+`mot-de-passe-oublie.html`, `etudiant.html`, `employe.html`,
+`gerant.html` et `admin.html` restent accessibles.
+Lire [MIGRATION-REACT.md](MIGRATION-REACT.md) pour la stratégie et les limites.
+
+**Important :** aucune API d'authentification, de paiement ni de réservation
+réelle n'a été ajoutée par cette migration. Les commandes, profils et paiements
+restent des parcours locaux. N'utilisez pas de véritables données personnelles.
 
 Restaurant **ZEDUC-SP@CE**, Kinshasa, communauté des étudiants de l’ULC ICAM. L’accueil conserve les compositions et les photos de la référence Dishify fournie ; le logo noir et or provient du fichier utilisateur.
 
@@ -46,15 +78,15 @@ Prix en francs congolais, horaires, taux de fidélité et bonus sont des valeurs
 
 Le contexte Cameroun / UCAC ICAM du cahier des charges a été remplacé par Kinshasa / ULC ICAM, selon la demande. Les exigences de back-end du document ne font pas partie de cette livraison.
 
-## Lancer localement
+## Lancer la version historique
 
-Node.js suffit, sans installation de dépendances :
+Node.js suffit pour lancer l'ancienne version, sans installer les dépendances React :
 
 ```
 node server.mjs
 ```
 
-Puis ouvrir http://127.0.0.1:4173. Les sources finales sont directement dans `dist/` ; aucune compilation n’est nécessaire. Ne pas ouvrir les pages en `file://`, car les fonctions de compte utilisent les API de navigateur disponibles sur localhost ou HTTPS.
+Puis ouvrir http://127.0.0.1:4173. Les fichiers historiques sont directement dans `dist/` ; aucune compilation n’est nécessaire pour cette version. Pour React, utiliser `npm run dev`. Ne pas ouvrir les pages en `file://`, car les fonctions de compte utilisent les API de navigateur disponibles sur localhost ou HTTPS.
 
 ```
 node scripts/check.mjs

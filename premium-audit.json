@@ -1,7 +1,7 @@
 {
   "findings": [],
   "mode": "strict",
-  "projectRoot": ".",
+  "projectRoot": "/workspace/scratch/f4b97880a528/mon-miam-miam-react",
   "schemaVersion": 1,
   "summary": {
     "errors": 0,
