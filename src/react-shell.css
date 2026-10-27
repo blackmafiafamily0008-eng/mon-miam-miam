@@ -1,0 +1,48 @@
+/* Le design et la mise en page restent définis par les CSS d'origine. */
+.workspace-header .demo-badge { display: none; }
+/* L'accueil est une vitrine ; la commande est réservée à l'espace connecté. */
+body:has(#menu-left) [data-open-cart],
+body:has(#menu-left) .cart-count { display: none !important; }
+body:has(#menu-left) [data-hero-prev],
+body:has(#menu-left) [data-hero-next] { display: none !important; }
+
+/* Identité visuelle des trois opérateurs, sans modifier les libellés ni
+   le fonctionnement des boutons radio du formulaire historique. */
+.payment-option:has(input[value="mpesa"]) strong,
+.payment-option:has(input[value="orange"]) strong,
+.payment-option:has(input[value="airtel"]) strong {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.payment-option:has(input[value="mpesa"]) strong::before,
+.payment-option:has(input[value="orange"]) strong::before,
+.payment-option:has(input[value="airtel"]) strong::before {
+  content: '';
+  display: inline-block;
+  flex: 0 0 43px;
+  height: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.payment-option:has(input[value="mpesa"]) strong::before { background-image: url('/assets/payment-mpesa.svg'); }
+.payment-option:has(input[value="orange"]) strong::before { background-image: url('/assets/payment-orange.svg'); }
+.payment-option:has(input[value="airtel"]) strong::before { background-image: url('/assets/payment-airtel.png'); }
+@media(max-width:420px) {
+  .payment-option:has(input[value="mpesa"]) strong,
+  .payment-option:has(input[value="orange"]) strong,
+  .payment-option:has(input[value="airtel"]) strong { gap: 5px; }
+  .payment-option:has(input[value="mpesa"]) strong::before,
+  .payment-option:has(input[value="orange"]) strong::before,
+  .payment-option:has(input[value="airtel"]) strong::before { flex-basis: 33px; height: 24px; }
+}
+.react-load-error {
+  position: fixed; top: 1rem; left: 50%; transform: translateX(-50%);
+  z-index: 10000; max-width: min(92vw, 520px); padding: 1rem 1.25rem;
+  color: #fff; background: #852921; border: 1px solid #fff7;
+  box-shadow: 0 8px 30px #0004; border-radius: 3px;
+}
+.react-load-error p { margin: .5rem 0; }
+.react-load-error button { cursor: pointer; border: 1px solid #fff; background: transparent; color: #fff; padding: .5rem 1rem; }
+.react-load-error button:focus-visible { outline: 3px solid #f7cc78; outline-offset: 3px; }

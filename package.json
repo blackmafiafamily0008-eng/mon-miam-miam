@@ -2,7 +2,23 @@
   "name": "mon-miam-miam-frontend",
   "version": "2.0.0",
   "private": true,
-  "description": "Mon Miam Miam · ZEDUC-SP@CE · Kinshasa et ULC ICAM · Front-end français",
+  "description": "Mon Miam Miam · ZEDUC-SP@CE · Front-end React + Vite · Kinshasa",
   "type": "module",
-  "scripts": {"dev": "node server.mjs", "start": "node server.mjs", "check": "node scripts/check.mjs", "test": "node --test scripts/test-core.mjs"}
+  "scripts": {
+    "prepare:react": "node scripts/prepare-react.mjs",
+    "dev": "npm run prepare:react && vite --host 127.0.0.1",
+    "build": "npm run prepare:react && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "dev:legacy": "node server.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-react.mjs",
+    "test": "node --test scripts/test-core.mjs scripts/test-react.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.3.0"
+  }
 }
