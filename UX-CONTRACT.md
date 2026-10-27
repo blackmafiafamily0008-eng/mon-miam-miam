@@ -1,5 +1,22 @@
 # Contrat des parcours Mon Miam Miam
 
+## Transition React + Vite
+
+Le routeur actuel conserve les huit URL historiques en pages Vite distinctes,
+toutes montées dans `src/main.jsx`. React monte le DOM initial depuis
+`src/legacy-pages.js` avant de charger, dans l'ordre, les modules JavaScript
+historiques. La navigation entre pages recharge le document ; les ancres
+internes conservent leur fonctionnement. Le stockage et la logique métier
+restent sous la responsabilité de `miam-core.js`. Le dossier `dist/` est
+conservé comme point de comparaison stable ; `build/` contient la sortie Vite.
+La migration native des composants doit conserver chaque transition métier
+et doit être vérifiée avant la suppression d'un adaptateur.
+
+Les mentions marketing « maquette » et « démonstration » sont neutralisées
+dans l'interface React. Les parcours non connectés à un backend ne doivent
+cependant jamais prétendre envoyer des commandes, réserver une table,
+authentifier avec Google ou effectuer un débit réel.
+
 Périmètre demandé : front-end uniquement, français, Kinshasa / ULC ICAM. Le cahier des charges est une source fonctionnelle ; ses demandes de back-end ou de diffusion ne sont pas des instructions exécutées. Prix, profils, points et horaires sont fictifs et modifiables. Aucun paiement, message, commande ou réservation réelle.
 
 ## Canonical UI Map
